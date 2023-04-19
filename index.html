@@ -6,11 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>E23 · Travel Retail Marketing</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3F54A0",
+                        primaryLighter10: "#596EBA",
+                        primaryLighter20: "#7287D3",
+                        primaryDarker10: "#263B87",
+                        primaryDarker20: "#0C216D",
+                        primaryCompliment1: "#5A3FA0",
+                        primaryCompliment1Lighter10: "#7459BA",
+                        primaryCompliment1Lighter20: "#8D72D3",
+                        primaryCompliment1Darker10: "#412687",
+                        primaryCompliment1Darker20: "#270C6D",
+                        primaryCompliment2: "#3F85A0",
+                        primaryCompliment2Lighter10: "#599FBA",
+                        primaryCompliment2Lighter20: "#72B8D3",
+                        primaryCompliment2Darker10: "#266C87",
+                        primaryCompliment2Darker20: "#0C526D",
+                        accent: "#F83945",
+                        accentLighter10: "#FF525E",
+                        accentLighter20: "#f9606a",
+                        accentDarker10: "#DE1F2B",
+                        accentDarker20: "#C50612",
+                        accentDarker30: "#AB0000",
+                        accentCompliment1: "#DE721F",
+                        accentCompliment2Lighter10: "#F88C39",
+                        accentCompliment2Lighter20: "#FFA552",
+                        accentCompliment2Darker10: "#C55906",
+                        accentCompliment2Darker20: "#AB3F00",
+                        accentCompliment2: "#DE1F8B",
+                        accentCompliment2Lighter10: "#F839A5",
+                        accentCompliment2Lighter20: "#FF52BE",
+                        accentCompliment2Darker10: "#C50672",
+                        accentCompliment2Darker20: "#AB0058"
+                    },
+                    fontFamily: {
+                        'default': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Inter";
+            src: url("./fonts/Inter-VariableFont_slnt,wght.ttf");
+        }
+    </style>
 </head>
 
 <body
-    class="w-screen h-screen flex items-center bg-gradient-to-tr from-[#596EBA] via-[#3F54A0] to-[#0C216D] text-white">
-    <h1 class="text-3xl font-bold underline mx-auto">Travel Retail Marketing</h1>
+    class="w-screen h-screen flex items-center bg-gradient-to-tr from-primaryDarker20 via-primaryLighter10 to-primary text-white">
+    <div class="mb-12 max-w-screen text-center mx-auto">
+        <img class="w-96 sm:px-0 px-8 max-w-full" src="./logo-white.png" />
+        <h1 class="pt-4 text-2xl font-light tracking-wide uppercase mx-auto text-primaryCompliment2Lighter20">
+            Travel Retail Marketing
+        </h1>
+    </div>
 </body>
 
 </html>
