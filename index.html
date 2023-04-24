@@ -2,87 +2,600 @@
 <html lang="en" style="scrollbar-gutter: stable;">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>E23 · Travel Retail Marketing</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-    <link rel="manifest" href="/icons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#3F54A0",
-                        primaryLighter10: "#596EBA",
-                        primaryLighter20: "#7287D3",
-                        primaryDarker10: "#263B87",
-                        primaryDarker20: "#0C216D",
-                        primaryCompliment1: "#5A3FA0",
-                        primaryCompliment1Lighter10: "#7459BA",
-                        primaryCompliment1Lighter20: "#8D72D3",
-                        primaryCompliment1Darker10: "#412687",
-                        primaryCompliment1Darker20: "#270C6D",
-                        primaryCompliment2: "#3F85A0",
-                        primaryCompliment2Lighter10: "#599FBA",
-                        primaryCompliment2Lighter20: "#72B8D3",
-                        primaryCompliment2Darker10: "#266C87",
-                        primaryCompliment2Darker20: "#0C526D",
-                        accent: "#F83945",
-                        accentLighter10: "#FF525E",
-                        accentLighter20: "#f9606a",
-                        accentDarker10: "#DE1F2B",
-                        accentDarker20: "#C50612",
-                        accentDarker30: "#AB0000",
-                        accentCompliment1: "#DE721F",
-                        accentCompliment2Lighter10: "#F88C39",
-                        accentCompliment2Lighter20: "#FFA552",
-                        accentCompliment2Darker10: "#C55906",
-                        accentCompliment2Darker20: "#AB3F00",
-                        accentCompliment2: "#DE1F8B",
-                        accentCompliment2Lighter10: "#F839A5",
-                        accentCompliment2Lighter20: "#FF52BE",
-                        accentCompliment2Darker10: "#C50672",
-                        accentCompliment2Darker20: "#AB0058"
-                    },
-                    fontFamily: {
-                        'sans': ['Jost', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        @font-face {
-            font-family: "Jost";
-            src: url("/fonts/Jost-VariableFont_wght.ttf");
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E23 · Travel Retail Marketing</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+  <link rel="manifest" href="/icons/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3F54A0',
+            primaryLighter10: '#596EBA',
+            primaryLighter20: '#7287D3',
+            primaryDarker10: '#263B87',
+            primaryDarker20: '#0C216D',
+            primaryCompliment1: '#5A3FA0',
+            primaryCompliment1Lighter10: '#7459BA',
+            primaryCompliment1Lighter20: '#8D72D3',
+            primaryCompliment1Darker10: '#412687',
+            primaryCompliment1Darker20: '#270C6D',
+            primaryCompliment2: '#3F85A0',
+            primaryCompliment2Lighter10: '#599FBA',
+            primaryCompliment2Lighter20: '#72B8D3',
+            primaryCompliment2Darker10: '#266C87',
+            primaryCompliment2Darker20: '#0C526D',
+            accent: '#F83945',
+            accentLighter10: '#FF525E',
+            accentLighter20: '#f9606a',
+            accentDarker10: '#DE1F2B',
+            accentDarker20: '#C50612',
+            accentDarker30: '#AB0000',
+            accentCompliment1: '#DE721F',
+            accentCompliment2Lighter10: '#F88C39',
+            accentCompliment2Lighter20: '#FFA552',
+            accentCompliment2Darker10: '#C55906',
+            accentCompliment2Darker20: '#AB3F00',
+            accentCompliment2: '#DE1F8B',
+            accentCompliment2Lighter10: '#F839A5',
+            accentCompliment2Lighter20: '#FF52BE',
+            accentCompliment2Darker10: '#C50672',
+            accentCompliment2Darker20: '#AB0058',
+          },
+          fontFamily: {
+            sans: ['Jost', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: 'Jost';
+      src: url('/fonts/Jost-VariableFont_wght.ttf');
+    }
+  </style>
 </head>
 
-<body
-    class="w-screen h-screen flex items-center bg-gradient-to-br from-primaryDarker10 via-primary to-primaryDarker10 text-white">
-    <div class="mb-12 max-w-screen text-center mx-auto">
-        <img class="w-96 sm:px-0 px-8 max-w-full" src="./logo-white.png" />
-        <h1 class="pt-4 text-2xl font-light tracking-wide uppercase mx-auto text-primaryCompliment2Lighter20">
-            Travel Retail Marketing
-        </h1>
+<body class="w-screen">
+  <div class="h-screen overflow-hidden bg-custom" style="background-color: #F6F6F8">
+    <div class="flex flex-col pt-6 pb-16 sm:pb-24">
+      <div x-data="{ showMobileMenu: false }">
+        <!-- navbar -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <nav class="relative flex items-center justify-between sm:h-10" aria-label="Global">
+            <div class="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
+              <div class="flex w-full items-center justify-between md:w-auto">
+                <a href="#">
+                  <span class="sr-only">E23 Delivery</span>
+                  <img class="h-8 w-auto sm:h-10" src="./e23-logo.png?vsn=d" alt="E23 logo" />
+                </a>
+                <div class="hidden md:flex md:gap-x-6 ml-12">
+                  <a href="#product"
+                    class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                    Product
+                  </a>
+                  <a href="#features"
+                    class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                    Features
+                  </a>
+                  <a href="#faq"
+                    class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                    Questions
+                  </a>
+                  <a href="#pricing"
+                    class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                    Pricing
+                  </a>
+                </div>
+                <!-- mobile: hamburger menu & dismiss buttons -->
+                <div class="-mr-2 flex items-center md:hidden">
+                  <span class="inline-flex mr-6">
+                    <a href="https://e23delivery.com/users/register?for_subdomain=console"
+                      class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-normal focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-primary text-white hover:text-slate-100 hover:bg-primaryLighter10 active:bg-primaryDarker20 active:text-blue-100 focus-visible:outline-primaryDarker10">
+                      Get started
+                    </a>
+                  </span>
+                  <button type="button" x-show="!showMobileMenu"
+                    class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryLighter10"
+                    x-bind:aria-expanded="showMobileMenu" @click="showMobileMenu = !showMobileMenu"
+                    aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Heroicon name: outline/bars-3 -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                    </svg>
+                  </button>
+                  <button type="button" x-show="showMobileMenu"
+                    class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primaryLighter10"
+                    @click="showMobileMenu = false" style="display: none;">
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x-mark -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- login & sign up -->
+            <div class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:gap-x-6 md:items-center md:justify-end">
+              <div class="hidden md:block">
+                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                  href="https://e23delivery.com/users/log_in?for_subdomain=console">
+                  Sign in
+                </a>
+              </div>
+              <span class="inline-flex">
+                <a href="https://e23delivery.com/users/register?for_subdomain=console"
+                  class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-normal focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-primary text-white hover:text-slate-100 hover:bg-primaryLighter10 active:bg-primaryDarker20 active:text-blue-100 focus-visible:outline-primaryDarker10">
+                  <span>
+                    Get started
+                    <span class="hidden lg:inline">today</span>
+                  </span>
+                </a>
+              </span>
+            </div>
+          </nav>
+        </div>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div
+          class="absolute inset-x-0 m-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 opacity-100 scale-100"
+          x-show="showMobileMenu" @click.outside="showMobileMenu = false"
+          x-transition:enter="transition duration-150 ease-out" x-transition:enter-start="transform opacity-0 scale-95"
+          x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition duration-100 ease-in"
+          x-transition:leave-start="transform opacity-100 scale-100"
+          x-transition:leave-end="transform opacity-0 scale-95" style="display: none;">
+          <div class="px-2 pt-2">
+            <a href="#product" class="block w-full p-2">Product</a>
+            <a href="#features" class="block w-full p-2">Features</a>
+            <a href="#faq" class="block w-full p-2">Questions</a>
+            <a href="#pricing" class="block w-full p-2">Pricing</a>
+            <hr class="m-2 border-gray-400/40" />
+            <a href="https://e23delivery.com/users/log_in?for_subdomain=console" class="block w-full p-2">
+              Sign in
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-20 mb-0 max-w-7xl px-4 sm:mt-20 md:mt-24">
+        <div class="text-center">
+          <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-5xl">
+            <span class="block xl:inline">
+              Unlocking the Potential<br> of Digital Sales in Travel Retail
+            </span>
+            <span class="block xl:inline">
+              
+            </span>
+
+
+          </h1>
+          <h1></h1>
+          <p class="mx-auto mt-4 max-w-2xl text-sm font-light text-slate-700">
+            We help travel retailers acquire new customers and drive revenue growth with targeted online marketing campaigns and a network of affiliates in the travel industry.
+          </p>
+
+
+          <div class="items-center w-96  text-center mx-auto">
+            <div class="mt-6 mb-8 mr-4 ml-4 center relative">
+              <input type="email" id="UserEmail" placeholder="Enter your email"
+                class="w-full h-12 font-light rounded-full border-gray-200 pl-4 py-2 pe-10 shadow-sm sm:text-sm" />
+
+              <span class="absolute inset-y-0 end-0 grid place-content-center">
+                <a href="https://e23delivery.com/users/register?for_subdomain=console"
+                  class="group inline-flex items-center justify-center rounded-full py-4 px-4  text-sm font-normal focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-primary text-white hover:text-slate-100 hover:bg-primaryLighter10 active:bg-primaryDarker20 active:text-blue-100 focus-visible:outline-primaryDarker10">
+                  <span>
+                    Contact Us
+                  </span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+         
+
+        </div>
+       
+
+
+      </div>
+      <div class=" mx-auto mt-12 mb-0 max-w-7xl px-4 align-self-end">
+        <img src="./tesla.png" alt="Description of the image" class="cover center rounded-lg h-full">
+      </div>
     </div>
+  </div>
+
+
+  <div class="mx-auto max-w-7xl px-4">
+    <!-- explore --> 
+    <div class="max-w-7xl px-6 sm:mt-24 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <span class="bg-custom text-xs font-normal text-black px-2 py-1 rounded-full"
+          style="background-color: #DFF7DE;">
+          FEATURES
+        </span>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Explore our amazing features</p>
+        <p class="mt-4 text-md text-slate-700">The travel retail industry is evolving, creating potential for revenue growth through digital sales channels. In-person shopping remains the core, but embracing online sales can tap into an untapped market and offer convenient collection on arrival.</p>
+      </div>
+      <div class="mx-auto mt-16 mb-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                <i class="fas fa-bullseye text-white"></i>
+              </div>
+              Targeted Marketing
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">E23 combines targeted online marketing campaigns with a network of travel industry affiliates to reach potential customers at the right time and place.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                <i class="fas fa-users text-white"></i>
+              </div>
+              Customer Acquisition
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">We help travel retailers acquire new customers for their existing digital sales channels, driving revenue growth without disrupting their core business.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                <i class="fas fa-link text-white"></i>
+              </div>
+              Seamless Integration
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">E23 integrates with existing e-commerce websites, optimizing them for mobile usage, enabling online payments, and allowing for short-notice sales.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                <i class="fas fa-chart-line text-white"></i>
+              </div>
+              Performance Insights
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">E23 tracks and analyzes customer behavior, providing valuable insights to help travel retailers refine their marketing strategies and maximize their return on investment.
+
+
+
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    
+
+    
+
+
+    <!-- integrations -->
+    <div class="max-w-4xl mb-24 mx-auto px-6 sm:mt-24 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <span class="bg-custom text-xs font-normal  text-black px-2 py-1 rounded-full"
+          style="background-color: #DFF7DE;">
+          INTEGRATIONS
+        </span>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Seamless integrations
+          with<br>other great tools</p>
+        <p class="mt-2 text-sm font-normal leading-8 text-gray-600"> Optimize your channels to allow for short-notice sales.</p>
+
+      </div>
+      <div class="w-100 mt-8 mb-8 mx-auto px-4">
+        <!-- grid -->
+        <div class="grid grid-cols-11 gap-2 text-center">
+          <div class="col-span-3">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./hubspot.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-3">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain py-2 w-full mx-auto sm:h-10 center" src="./zoom.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./slack.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-3">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./fb.jpeg" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./whatsapp.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./insta.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-4 ">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./aelia.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./smart.png" alt="HubSpto" />
+            </div>
+          </div>
+          <div class="col-span-1 ">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./e23-logo.png?vsn=d" alt="HubSpto" />
+            </div>
+          </div>
+
+          <div class="col-span-4 ">
+            <div class="bg-gray-50 p-4 rounded-md">
+              <img class="object-contain h-full w-full mx-auto sm:h-10 center" src="./fcmo.jpg" alt="HubSpto" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>  
+  <div class="bg-custom" style="background-color: #F6F6F8">
+    <section class="mx-auto py-12 md:py-28 lg:py-24">
+      <div class=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+       
+        <div class="relative">
+          <img class="mx-auto h-8" src="https://e23delivery.com/images/logo-wihp-5bb4149459f0d7c714506bca61f8e8bc.svg?vsn=d" alt="WIHP">
+          <blockquote class="mt-10">
+            <div class="mx-auto max-w-3xl text-center text-2xl font-medium leading-9 text-gray-900">
+              <p>
+                “What really convinced me about E23 is that they found a solution for in-flight shopping with pick up on arrival, so limit the stock to carry on board, making airport shopping potentially limitless and more sustainable.”
+              </p>
+            </div>
+            <footer class="mt-8">
+              <div class="md:flex md:items-center md:justify-center">
+                <div class="md:flex-shrink-0">
+                  <img class="mx-auto h-10 w-10 rounded-full" src="https://e23delivery.com/images/vincent-ramelli-03-da43020824db7c5a3b26efb8195fe27c.jpeg?vsn=d" alt="Vincent Ramelli">
+                </div>
+                <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                  <div class="text-base font-medium text-gray-900">Vincent Ramelli</div>
+                  <svg class="mx-1 hidden h-5 w-5 text-primary md:block" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M11 0h3L9 20H6l5-20z"></path>
+                  </svg>
+                  <div class="text-base font-medium text-gray-500">CEO and Founder at WIHP</div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- downloads session -->
+  <div class="max-w-6xl pb-12 mx-auto sm:mt-24 lg:px-8 px-4">
+    <div class="p-4 mt-12 md:p-8 w-full lg:p-8 border border-gray-200 rounded-lg">
+      <div class="flex flex-row">
+        <div class="col flex-2 mr-4 justify-items-start">
+          <h4 class="mx-auto font-display font-medium tracking-tight text-slate-900 sm:text-4xl">
+            More than 13,000 users access <br>duty free products daily.
+          </h4>
+          <p class="mt-6 max-w-2xl text-md font-light text-slate-700">
+            Embark on an unforgettable shopping experience at Geneva airport, one of our best selling sites, and discover a plethora of premium duty-free products. Enhance your shopping experience with our outstanding sales-generating apps, designed to help you find the best deals and maximize your savings.
+          </p>
+          <a href="https://fco.e23delivery.com" type="button" class="mt-4 inline-flex items-center gap-x-2 rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Shop Now 
+            <i class="fas fa-shopping-bag text-white"></i>
+          </a>
+        </div>
+
+
+        <div class="flex justify-items-between">
+          <div class="mr-8 col justify-items-start">
+            <h4 class="mx-auto  font-display font-medium tracking-tight text-slate-900 sm:text-4xl">
+              4.9
+            </h4>
+            <div class="flex justify-start">
+              <i class="fa inline-flex fa-star text-xs" style="color: gold;" aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+
+            </div>
+
+            <p class="mt-2 max-w-2xl text-center text-md font-light text-slate-700">
+              Travel Partner
+            </p>
+            <a class="justify-center" href="https://play.google.com/store/apps/details?id=com.e23delivery.partners">
+              <img class="h-10" src="./playstore.png" alt="">
+            </a>
+            <a class="justify-center" href="https://apps.apple.com/app/e23-travel-partner/id6446454404?src=AppAgg.com">
+              <img class="h-8" src="./appstore.png" alt="">
+            </a>
+           
+            
+
+          </div>
+          <div class="ml-8-8 col ">
+            <h4 class="mx-auto font-display font-medium  tracking-tight text-slate-900 sm:text-4xl">
+              5.0
+            </h4>
+            <div class="flex justify-start">
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+              <i class="fa inline-flex fa-star text-xs" style="color: gold; " aria-hidden="true"></i>
+
+            </div>
+
+            <p class="mt-2 max-w-2xl text-md text-center font-light text-slate-700">
+              E23 Delivery
+            </p>
+
+            <a class="justify-center" href="https://play.google.com/store/apps/details?id=com.e23delivery.corridore">
+              <img class="h-10" src="./playstore.png" alt="">
+            </a>
+            <a class="justify-center" href="https://apps.apple.com/app/e23-delivery/id6443684049?src=AppAgg.com">
+              <img class="h-8" src="./appstore.png" alt="">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+
 </body>
+
+<footer class="bg-white" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div class="space-y-8">
+        <img class="h-7" src="./e23-logo.png?vsn=d" alt="Company name">
+        <p class="text-sm leading-6 text-gray-600">Making the world a better place through constructing elegant hierarchies.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">YouTube</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Marketing</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Analytics</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Commerce</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Insights</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Support</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Documentation</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Guides</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">API Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claim</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+      <p class="text-xs leading-5 text-gray-500">&copy; 2022 Your Company, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
 </html>
